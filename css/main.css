@@ -105,6 +105,20 @@ header {
 
 }
 
+.inner .number img {
+  position: absolute;
+  width: 300px;
+  height: 350px;
+  right: -596px;
+  top: 0;
+  border-radius: 10px;
+  display: none;
+}
+
+.inner .number ul:nth-child(2) a:hover img{
+  display: block;
+}
+
 .inner .number ul .top100  {
   color: purple;
   font-weight: 700;
@@ -113,6 +127,7 @@ header {
 .inner .number ul li {
   margin-top: 15px;
   font-size: 20px;
+  /* position: relative; */
 }
 
 .inner .number ul li a {
@@ -154,9 +169,3 @@ header {
 }
 
 
-
-.inner .cover-img img {
-  height: 300px;
-  width: 300px;
-  margin-left: 10px;
-}
