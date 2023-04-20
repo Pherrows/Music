@@ -1,0 +1,162 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #000;
+}
+
+.inner {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  box-sizing: border-box;
+  background-color: #fff;
+  display: flex;
+}
+
+* a {
+  text-decoration: none;
+}
+
+
+
+
+/* header */
+
+header {
+  border-bottom: 1px solid #000;
+}
+
+.inner .logo img {
+  height: 60px;
+  width: 60px;
+  margin-top: 10px;
+
+}
+
+.inner .sub-menu {
+  position: absolute;
+  display: flex;
+  right: 0;
+}
+
+.inner .sub-menu ul {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner .sub-menu ul li {
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.inner .sub-menu ul li a {
+  color: #000;
+}
+
+.inner .sub-menu ul span {
+  font-size: 22px;
+  margin-left: 10px;
+  color: purple;
+}
+
+.inner .menu ul {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner .menu ul li {
+  /* background-color: purple;
+  border-radius: 30px; */
+
+}
+
+.inner .menu ul li a {
+  margin-left: 45px;
+  margin-right: 45px;
+  font-size: 15px;
+  color: #000;
+  font-weight: 600;
+}
+
+/* 슬라이드 영역 */
+
+.swiper .swiper-slide img {
+  width: 900px;
+  height: 350px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.inner .number {
+  margin-top: 20px;
+  position: relative;
+  margin-left: 20px;
+
+}
+
+.inner .number ul .top100  {
+  color: purple;
+  font-weight: 700;
+}
+
+.inner .number ul li {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.inner .number ul li a {
+  color: #000;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.inner .number ul li span {
+  color: #666;
+  display: block;
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+.inner .number-2 {
+  margin-top: 20px;
+  position: relative;
+  margin-left: 70px;
+
+}
+
+.inner .number-2 ul li {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.inner .number-2 ul li a {
+  color: #000;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.inner .number-2 ul li span {
+  color: #666;
+  display: block;
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+
+
+.inner .cover-img img {
+  height: 300px;
+  width: 300px;
+  margin-left: 10px;
+}
