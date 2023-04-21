@@ -1,9 +1,10 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Pretendard,-apple-system,BlinkMacSystemFont,system-ui,Roboto,'Inter','Helvetica Neue','Segoe UI','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
   color: #000;
+  background-color: #fff;
 }
 
 .inner {
@@ -13,6 +14,7 @@ body {
   box-sizing: border-box;
   background-color: #fff;
   display: flex;
+  
 }
 
 * a {
@@ -24,14 +26,14 @@ body {
 
 /* header */
 
-header {
-  border-bottom: 1px solid #000;
+header .menu ul li a:hover {
+  color: rgb(145, 70, 255);
 }
 
 .inner .logo img {
-  height: 60px;
-  width: 60px;
-  margin-top: 10px;
+  height: 100px;
+  width: 100px;
+  margin-top: 30px;
 
 }
 
@@ -43,7 +45,7 @@ header {
 
 .inner .sub-menu ul {
   display: flex;
-  margin-top: 10px;
+  margin-top: 30px;
   justify-content: center;
   align-items: center;
 }
@@ -61,7 +63,7 @@ header {
 .inner .sub-menu ul span {
   font-size: 22px;
   margin-left: 10px;
-  color: purple;
+  color: rgb(145, 70, 255)
 }
 
 .inner .menu ul {
@@ -95,7 +97,7 @@ header {
   width: 900px;
   height: 350px;
   margin-top: 20px;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .inner .number {
@@ -108,32 +110,84 @@ header {
 .inner .number img {
   position: absolute;
   width: 300px;
-  height: 350px;
-  right: -596px;
+  height: 310px;
+  right: -616px;
   top: 0;
   border-radius: 10px;
   display: none;
 }
+.inner .number-2 img {
+  position: absolute;
+  width: 300px;
+  height: 310px;
+  right: -342px;
+  top: 0;
+  border-radius: 10px;
+  display: none;
+  transition: 1s;
+}
 
-.inner .number ul:nth-child(2) a:hover img{
+
+.number ul img.n-1 {
   display: block;
 }
 
+.inner .number ul li:hover a {
+  color: rgb(145, 70, 255)
+}
+
+.inner .number-2 ul li:hover a {
+  color: rgb(145, 70, 255)
+}
+
+.number ul li:hover .n-1 {
+  display: block;
+}
+.number ul li:hover .n-2 {
+  display: block;
+}
+.number ul li:hover .n-3 {
+  display: block;
+}
+
+.number ul li:hover .n-4 {
+  display: block;
+}
+
+.number-2 ul li:hover .n-5 {
+  display: block;
+} 
+
+.number-2 ul li:hover .n-6 {
+  display: block;
+} 
+
+.number-2 ul li:hover .n-7 {
+  display: block;
+} 
+
+.number-2 ul li:hover .n-8 {
+  display: block;
+} 
+
+
+
 .inner .number ul .top100  {
-  color: purple;
+  color: rgb(145, 70, 255);
   font-weight: 700;
 }
 
 .inner .number ul li {
   margin-top: 15px;
   font-size: 20px;
-  /* position: relative; */
+  /* border: 2px solid #666;
+  border-radius: 10px; */
 }
 
 .inner .number ul li a {
   color: #000;
-  font-size: 23px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .inner .number ul li span {
@@ -141,6 +195,8 @@ header {
   display: block;
   margin-top: 5px;
   font-size: 18px;
+  margin-left: 3px;
+
 }
 
 .inner .number-2 {
@@ -157,8 +213,8 @@ header {
 
 .inner .number-2 ul li a {
   color: #000;
-  font-size: 23px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .inner .number-2 ul li span {
@@ -166,6 +222,118 @@ header {
   display: block;
   margin-top: 5px;
   font-size: 18px;
+  margin-left: 3px;
 }
+
+
+/* 유튜브 */
+
+.youtube {
+  overflow: hidden;
+}
+
+.youtube__area {
+  /* 유튜브의 표준 영상 비율 16:9 */
+  width: 900px;
+  height: 506px;
+  margin-top: 20px;
+  
+}
+
+#player {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.youtube .youtube__cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+
+/* 추천음악 */
+
+.inner .commend .material-icons {
+  width: 200px;
+  height: 180px;
+  color: rgb(145, 70, 255);
+  font-size: 150px;
+  position: absolute;
+  left: 100px;
+  top: 40px;
+}
+
+
+.inner .commend-1 {
+  color: rgb(145, 70, 255);
+  font-weight: 700;
+  display: block;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  /* margin-bottom: 20px; */
+}
+
+.commend-2 {
+  position: absolute;
+  right: 0;
+  margin-top: 20px;
+}
+
+.commend-2 ul li {
+  margin-bottom: 15px;
+  margin-right: 40px;
+  
+}
+
+.commend-2 ul li a {
+  color: #000;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.inner .commend-2 ul li img {
+  width: 200px;
+  height: 180px;
+  left: -250px;
+  top: 0;
+  position: absolute;
+  border-radius: 10px;
+  display: none;
+}
+
+.inner .commend-2 ul li .c-1 {
+  display: block;
+}
+
+.commend-2 ul li:hover img {
+  display: block;
+}
+
+.commend-2 ul li:hover a {
+  color: rgb(145, 70, 255);
+}
+
+.inner .footer-1 {
+  border-top: 1px solid rgb(145, 70, 255);
+  height: 150px;
+  bottom: -500px;
+  position: absolute;
+  /* background-color: rgb(145, 70, 255); */
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.inner .footer-1 li {
+  
+}
+
+
 
 
