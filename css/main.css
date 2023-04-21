@@ -14,7 +14,7 @@ body {
   box-sizing: border-box;
   background-color: #fff;
   display: flex;
-  
+  /* border-bottom: 1px solid rgb(145, 70, 255); */
 }
 
 * a {
@@ -100,6 +100,8 @@ header .menu ul li a:hover {
   border-radius: 15px;
 }
 
+/* top 100 */
+
 .inner .number {
   margin-top: 20px;
   position: relative;
@@ -111,25 +113,27 @@ header .menu ul li a:hover {
   position: absolute;
   width: 300px;
   height: 310px;
-  right: -616px;
+  right: -607px;
   top: 0;
-  border-radius: 10px;
-  display: none;
+  border-radius: 20px;
+  /* display: none; */
+  opacity: 0;
 }
 .inner .number-2 img {
   position: absolute;
   width: 300px;
   height: 310px;
-  right: -342px;
+  right: -320px;
   top: 0;
-  border-radius: 10px;
-  display: none;
-  transition: 1s;
+  border-radius: 20px;
+  /* display: none; */
+  opacity: 0;
 }
 
 
 .number ul img.n-1 {
-  display: block;
+  /* display: block; */
+  opacity: 1;
 }
 
 .inner .number ul li:hover a {
@@ -141,33 +145,49 @@ header .menu ul li a:hover {
 }
 
 .number ul li:hover .n-1 {
-  display: block;
+  /* display: block; */
+  opacity: 1;
+  transition: 0.5s;
 }
 .number ul li:hover .n-2 {
-  display: block;
+  /* display: block; */
+  opacity: 1;
+  transition: 0.5s;
 }
 .number ul li:hover .n-3 {
-  display: block;
+  /* display: block; */
+  opacity: 1;
+  transition: 0.5s;
 }
 
 .number ul li:hover .n-4 {
-  display: block;
+  /* display: block; */
+  opacity: 1;
+  transition: 0.5s;
 }
 
 .number-2 ul li:hover .n-5 {
-  display: block;
+  /* display: block; */
+  opacity: 1;
+  transition: 0.5s;
 } 
 
 .number-2 ul li:hover .n-6 {
-  display: block;
+  /* display: block; */
+  opacity: 1;
+  transition: 0.5s;
 } 
 
 .number-2 ul li:hover .n-7 {
-  display: block;
+  /* display: block; */
+  opacity: 1;
+  transition: 0.5s;
 } 
 
 .number-2 ul li:hover .n-8 {
-  display: block;
+  /* display: block; */
+  opacity: 1;
+  transition: 0.5s;
 } 
 
 
@@ -304,15 +324,20 @@ header .menu ul li a:hover {
   top: 0;
   position: absolute;
   border-radius: 10px;
-  display: none;
+  /* display: none; */
+  opacity: 0;
+  
 }
 
 .inner .commend-2 ul li .c-1 {
-  display: block;
+  /* display: block; */
+  opacity: 1;
 }
 
 .commend-2 ul li:hover img {
-  display: block;
+  /* display: block; */
+  opacity: 1;
+  transition: 0.8;
 }
 
 .commend-2 ul li:hover a {
@@ -331,7 +356,15 @@ header .menu ul li a:hover {
 }
 
 .inner .footer-1 li {
-  
+  left: 0;
+  /* position: absolute; */
+}
+
+.inner .footer-1 li a {
+  font-size: 11px;
+  color: #444;
+  margin-bottom: 5px;
+text-align: center;
 }
 
 
