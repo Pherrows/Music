@@ -6,9 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Music</title>
 
+  
+
   <!-- 스타일 초기화 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-
+  <link rel="stylesheet" href="./css/main.css">
   <!-- 구글 웹 폰트 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,8 +25,6 @@
 
   <!-- YOUTUBE -->
   <script src="./js/youtube.js"></script>
-
-  <link rel="stylesheet" href="./css/main.css">
   <script defer src="./js/main.js"></script>
 </head>
 
@@ -34,16 +34,34 @@
   <header>
     <div class="inner">
       <a href="/" class="logo">
-        <img src="./images/images.png" alt="">
+        <img src="./images/logogo.png" alt="">
       </a>
       <div class="sub-menu">
         <ul>
           <li><a href="javascript:void(0)">Sign in</a></li>
           <li><a href="javascript:void(0)">Sign up</a></li>
-          <span class="material-icons">account_circle</span>
         </ul>
+        <span class="material-icons">account_circle</span>
+      </div>
+      <div class="search">
+        <input type="text" placeholder="search">
+        <span class="material-icons">search</span>
       </div>
       <div class="menu">
+        <ul>
+          <li><a href="javascript:void(0)">Top 100</a></li>
+          <li><a href="javascript:void(0)">최신음악</a></li>
+          <li><a href="javascript:void(0)">장르음악</a></li>
+          <li><a href="javascript:void(0)">MV</a></li>
+          <li><a href="javascript:void(0)">매거진</a></li>
+        </ul>
+      </div>
+      <div class="menu-2">
+        <div class="btn">
+          <a href="#">
+            <span class="material-icons">menu</span>
+          </a>
+        </div>
         <ul>
           <li><a href="javascript:void(0)">Top 100</a></li>
           <li><a href="javascript:void(0)">최신음악</a></li>
@@ -83,8 +101,8 @@
   <section class="top">
     <div class="inner">
       <div class="number">
+        <h2 class="top100">Top.100</h2>
         <ul>
-          <li><a href="javascript:void(0)" class="top100">Top 100</a></li>
           <li>
             <a href="javascript:void(0)">1.I Don't Think That I Like Her</a>
             <span>Charlie Puth</span>
@@ -132,6 +150,27 @@
           </li>
         </ul>
       </div>
+
+      <div class="number-3">
+        <ul>
+          <li>
+            <a href="javascript:void(0)">9.Like A Star</a>
+            <span>Liska</span>
+          </li>
+          <li>
+            <a href="javascript:void(0)">10.Sunset Sea Breeze</a>
+            <span>Whitney s Playland</span>
+          </li>
+          <li>
+            <a href="javascript:void(0)">11.Cheetah</a>
+            <span>잭슨 Jackson Wang</span>
+          </li>
+          <li>
+            <a href="javascript:void(0)">12.Creativity</a>
+            <span>Amit Dev</span>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -150,7 +189,7 @@
 
 
   <!-- 추천음악 -->
-  <section>
+  <section class="cmd">
     <div class="inner">
       <div class="commend">
         <span class="commend-1">추천 음악</span>
@@ -188,13 +227,33 @@
 <section>
   <footer>
     <div class="inner">
-      <ul class="footer-1">
-        <li><a href="">상호명: Twitch Interactive, Inc.</a></li>
-        <li><a href="">대표자: Emmett Shear, CEO</a></li>
-        <li><a href="">주소: 350 Bush Street, 2nd Floor, San Francisco, California 94104, USA</a></li>
-        <li><a href="">070-8984-5697</a></li>
-        <li><a href="">호스팅 서비스 제공자: Amazon Web Services, Inc.</a></li>
-      </ul>
+      <div class="footer-1">
+        <p>상호명: Twitch Interactive, Inc.</p>
+        <p>대표자: Emmett Shear, CEO</p>
+        <p>주소: 350 Bush Street, 2nd Floor, San Francisco, California 94104, USA</p>
+        <p>070-8984-5697</p>
+        <p>호스팅 서비스 제공자: Amazon Web Services, Inc.</p>
+      </div>
+      <div class="footer-2">
+        <ul>
+          <li>
+            <a href="https://twitter.com/?lang=ko">
+              <img src="./images/트위터1.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/">
+              <img src="./images/인스타그램1.png" alt="">
+            </a>
+            
+          </li>
+          <li>
+            <a href="https://ko-kr.facebook.com/">
+              <img src="./images/페이스북.png" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </footer>
 </section>
