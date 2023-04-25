@@ -19,3 +19,27 @@ new Swiper('.inner .swiper', {
 });
 
 
+//
+const modalEl = document.querySelector('#modal'); 
+const lpImg = document.querySelector('#modal .modal-wrapper img'); 
+const lpTitleEl = document.querySelector('#modal .modal-wrapper .lp-title'); 
+const musicEls = document.querySelectorAll('.commend-2 li a');
+
+lpImg.addEventListener('click', function () {
+  this.classList.add('rotate');
+  setTimeout(() => {
+    this.classList.remove('rotate');
+  }, 1000);
+
+  const nextIndex = Number(lpTitleEl.dataset.lpIndex) + 1;
+  lpTitleEl.textContent = musicEls[nextIndex].textContent;
+  lpTitleEl.dataset.lpIndex = nextIndex;
+});
+
+musicEls.forEach(function (musicEl, index) {
+  musicEl.addEventListener('click', function () {
+    modalEl.style.display = 'block';
+    lpTitleEl.textContent = this.textContent;
+    lpTitleEl.dataset.lpIndex = index;
+  });
+});
