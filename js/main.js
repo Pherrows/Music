@@ -18,4 +18,14 @@ new Swiper('.inner .swiper', {
   },
 });
 
+const btn1El = document.querySelector(".btn-1");
+const btnEl = document.querySelector(".btn-2");
+const menuEl = document.querySelector(".menu-2");
+
+btn1El.addEventListener('click', function () {
+  menuEl.classList.toggle('active');
+});
+
+
+
 

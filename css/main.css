@@ -1,3 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
 body {
   font-family: Pretendard,-apple-system,BlinkMacSystemFont,system-ui,Roboto,'Inter','Helvetica Neue','Segoe UI','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif;
   font-size: 16px;
@@ -134,6 +141,16 @@ header .menu-2 ul {
 
 }
 
+header .btn span {
+  font-size: 40px;
+  right: 20px;
+  position: absolute;
+  color: rgb(200, 170, 230);
+  bottom: -14px;
+  z-index: 3;
+  opacity: 0;
+}
+
 header .menu-2 span {
   font-size: 40px;
   right: 20px;
@@ -151,6 +168,11 @@ header .menu-2 ul li a{
   justify-content: flex-end;
 } 
 
+header .inner .menu-2.active {
+  display: none;
+}
+
+
 /* 슬라이드 영역 */
 
 .swiper .swiper-slide img {
@@ -159,6 +181,7 @@ header .menu-2 ul li a{
   margin-top: 20px;
   border-radius: 15px;
 }
+
 
 /* top 100 */
 
@@ -339,6 +362,25 @@ header .menu-2 ul li a{
 }
 
 
+/* Top click */
+
+.top-click {
+  width: 900px;
+  height: 900px;
+  /* background-color: orange; */
+  position: absolute;
+  top: -600px;
+  border-radius: 50%;
+  z-index: 7;
+}
+
+.top-click img {  
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+
 
 /* 유튜브 */
 
@@ -486,6 +528,26 @@ header .menu-2 ul li a{
   border-radius: 10px;
 }
 
+.to-top {
+  width: 42px;
+  height: 42px;
+  background-color: rgb(200, 170, 230);
+  border: 2px solid rgb(200, 170, 230);
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  z-index: 5;
+}
+
+.to-top a span {
+  color: #fff;
+}
+
 
 @media screen and (max-width: 900px) {
   .number ul li img {
@@ -522,11 +584,20 @@ header .menu-2 ul li a{
     display: none;
   }
 
-  header .inner .menu-2 {
+  header .btn span {
     opacity: 1;
     transition: 1s;
   }
 
+
+    header .inner .menu-2 {
+    opacity: 1;
+    transition: 1s;
+    }
+
+    /* header .inner .menu-2.active {
+      display: block;
+    } */
 }
 
 
