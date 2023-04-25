@@ -410,21 +410,53 @@ header .inner .menu-2.active {
 
 
 /* Top click */
-
+.modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+  display: none;
+}
 .top-click {
-  width: 900px;
-  height: 900px;
-  /* background-color: orange; */
-  position: absolute;
-  top: -600px;
-  border-radius: 50%;
-  z-index: 7;
+  max-width: 800px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  text-align: center;
 }
 
 .top-click img {  
   width: 100%;
-  height: 100%;
   border-radius: 50%;
+  cursor: pointer;
+}
+
+.modal .top-click a span {
+  font-size: 50px;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  z-index: 11;
+  position: absolute;
+  left: 374px;
+  bottom: 250px;
+}
+
+.modal .top-click .lp-title-1{
+  position: absolute;
+  width: 100%;
+  font-size: 40px;
+  color: #fff;
+  top: 200px;
+}
+
+.modal .top-click img.rotate {
+  animation: rotate-once 1s;
 }
 
 

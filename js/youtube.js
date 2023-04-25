@@ -1,5 +1,4 @@
 //유튜브
-
 let tag = document.createElement('script'); // <script>
 
 tag.src = "https://www.youtube.com/iframe_api"; // <script src="https://www.youtube.com/iframe_api">

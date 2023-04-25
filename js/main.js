@@ -1,5 +1,4 @@
 // 슬라이드 영역
-
 new Swiper('.inner .swiper', {
   loop: true, 
   autoplay: {
@@ -29,27 +28,69 @@ btn1El.addEventListener('click', function () {
 
 
 
-//
-const modalEl = document.querySelector('#modal'); 
-const lpImg = document.querySelector('#modal .modal-wrapper img'); 
-const lpTitleEl = document.querySelector('#modal .modal-wrapper .lp-title'); 
-const musicEls = document.querySelectorAll('.commend-2 li a');
+// //
+// const modalEl = document.querySelector('#modal'); 
+// const lpImg = document.querySelector('#modal .modal-wrapper img'); 
+// const lpTitleEl = document.querySelector('#modal .modal-wrapper .lp-title'); 
+// const musicEls = document.querySelectorAll('.commend-2 li a');
 
-lpImg.addEventListener('click', function () {
+// lpImg.addEventListener('click', function () {
+//   this.classList.add('rotate');
+//   setTimeout(() => {
+//     this.classList.remove('rotate');
+//   }, 1000);
+
+//   const nextIndex = Number(lpTitleEl.dataset.lpIndex) + 1;
+//   lpTitleEl.textContent = musicEls[nextIndex].textContent;
+//   lpTitleEl.dataset.lpIndex = nextIndex;
+// });
+
+// musicEls.forEach(function (musicEl, index) {
+//   musicEl.addEventListener('click', function () {
+//     modalEl.style.display = 'block';
+//     lpTitleEl.textContent = musicEl.textContent;
+//     lpTitleEl.dataset.lpIndex = index;
+//   });
+// });
+
+
+
+
+// 모달 열기
+const topMusicEls = document.querySelectorAll(".number ul li a");
+const modal1El = document.querySelector(".modal");
+
+topMusicEls.forEach(function (topMusic, index) {
+  topMusic.addEventListener("click", function () {
+    modal1El.style.display = "block";
+    console.log(lpTitle1El);
+    lpTitle1El.textContent = topMusic.textContent;
+    lpTitle1El.dataset.lpIndex = index;
+  });
+});
+
+
+
+// 모달 닫기
+const closeEl = document.querySelector(".modal .top-click a span");
+
+closeEl.addEventListener("click",function () {
+  modal1El.style.display = "none";
+});
+
+// Lp img
+const lpTitle1El = document.querySelector(".modal .top-click .lp-title-1");
+const lpImg1 = document.querySelector(".modal .top-click img");
+
+lpImg1.addEventListener("click", function () {
   this.classList.add('rotate');
   setTimeout(() => {
     this.classList.remove('rotate');
   }, 1000);
-
-  const nextIndex = Number(lpTitleEl.dataset.lpIndex) + 1;
-  lpTitleEl.textContent = musicEls[nextIndex].textContent;
-  lpTitleEl.dataset.lpIndex = nextIndex;
+  const nextIndex = Number(lpTitle1El.dataset.lpIndex) + 1;
+  lpTitle1El.textContent = topMusicEls[nextIndex].textContent;
+  lpTitle1El.dataset.lpIndex = nextIndex;
+  
 });
 
-musicEls.forEach(function (musicEl, index) {
-  musicEl.addEventListener('click', function () {
-    modalEl.style.display = 'block';
-    lpTitleEl.textContent = this.textContent;
-    lpTitleEl.dataset.lpIndex = index;
-  });
-});
+
