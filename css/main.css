@@ -10,17 +10,17 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
-  color: #000;
-  background-color: #fff;
+  color: #fff;
+  background-color: #000;
   /* box-sizing: border-box; */
 }
 
 .inner {
-  max-width: 900px;
+  max-width: 930px;
   margin: 0 auto;
   position: relative;
   box-sizing: border-box;  
-  background-color: #fff;
+  background-color: #000;
   display: flex;
   /* border-bottom: 1px solid rgb(145, 70, 255); */
 }
@@ -136,7 +136,7 @@ header .sub-menu ul li {
 }
 
 header .sub-menu ul li a {
-  color: #000;
+  color: #fff;
 }
 
 header .sub-menu span {
@@ -162,7 +162,7 @@ header .menu ul li a {
   margin-left: 45px;
   margin-right: 45px;
   font-size: 15px;
-  color: #000;
+  color: #fff;
   font-weight: 600;
 }
 
@@ -175,7 +175,7 @@ header .inner .menu-2 {
   background-color: #fff;
   justify-content: center;
   align-items: center;
-  width: 200px;
+  width: 150px;
   height: 400px;
   border-radius: 10px;
   opacity: 0;
@@ -227,6 +227,7 @@ header .inner .menu-2.active {
   height: 350px;
   margin-top: 20px;
   border-radius: 15px;
+  border: 3px solid rgb(200, 170, 230);
 }
 
 
@@ -254,21 +255,24 @@ header .inner .menu-2.active {
   position: absolute;
   width: 300px;
   height: 310px;
-  right: -0;
+  right: 25px;
   top: 10px;
   border-radius: 20px;
   /* display: none; */
   opacity: 0;
+  border: 3px solid rgb(200, 170, 230);
 }
 .top .number-2 img {
   position: absolute;
   width: 300px;
   height: 310px;
-  right: 0px;
+  right: 25px;
   top: 10px;
   border-radius: 20px;
   /* display: none; */
   opacity: 0;
+  border: 3px solid rgb(200, 170, 230);
+
 }
 
 
@@ -354,13 +358,13 @@ header .inner .menu-2.active {
 }
 
 .top .number ul li a {
-  color: #000;
+  color: #fff;
   font-size: 20px;
   font-weight: 400;
 }
 
 .top .number ul li span {
-  color: #666;
+  color: #777;
   display: block;
   margin-top: 5px;
   font-size: 18px;
@@ -376,13 +380,13 @@ header .inner .menu-2.active {
 }
 
 .top .number-2 ul li a {
-  color: #000;
+  color: #fff;
   font-size: 20px;
   font-weight: 400;
 }
 
 .top .number-2 ul li span {
-  color: #666;
+  color: #777;
   display: block;
   margin-top: 5px;
   font-size: 18px;
@@ -459,6 +463,42 @@ header .inner .menu-2.active {
   animation: rotate-once 1s;
 }
 
+.top-click .left.rotate ~ .lpimg {
+  animation: rotate-once 1s;
+}
+
+.top-click .right.rotate ~ .lpimg {
+  animation: rotate-once 1s;
+}
+
+
+.left {
+  /* background-color: orange; */
+  position: absolute;
+  left: 50px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.left span {
+  font-size: 60px;
+  color: #fff;
+  
+}
+
+.right {
+  /* background-color: orange; */
+  position: absolute;
+  right: 50px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.right span {
+  font-size: 60px;
+  color: #fff;
+}
+
 
 
 /* 유튜브 */
@@ -527,7 +567,7 @@ header .inner .menu-2.active {
 }
 
 .commend-2 ul li a {
-  color: #000;
+  color: #fff;
   font-weight: 400;
   font-size: 18px;
 }
@@ -580,7 +620,7 @@ header .inner .menu-2.active {
   align-items: center;
   margin-top: 10px;
   font-size: 11px;
-  color: #666;
+  color: #777;
   margin-bottom: 5px;
   
 }

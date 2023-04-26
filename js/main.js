@@ -82,6 +82,10 @@ closeEl.addEventListener("click",function () {
 const lpTitle1El = document.querySelector(".modal .top-click .lp-title-1");
 const lpImg1 = document.querySelector(".modal .top-click img");
 
+const leftEl = document.querySelector(".modal .top-click .left");
+const rightEl = document.querySelector(".modal .top-click .right");
+
+
 lpImg1.addEventListener("click", function () {
   this.classList.add('rotate');
   setTimeout(() => {
@@ -90,7 +94,27 @@ lpImg1.addEventListener("click", function () {
   const nextIndex = Number(lpTitle1El.dataset.lpIndex) + 1;
   lpTitle1El.textContent = topMusicEls[nextIndex].textContent;
   lpTitle1El.dataset.lpIndex = nextIndex;
-  
+
 });
 
 
+leftEl.addEventListener("click", function () {
+  this.classList.add('rotate');
+  setTimeout(() => {
+    this.classList.remove('rotate');
+  }, 1000);
+  const nextIndex = Number(lpTitle1El.dataset.lpIndex) - 1;
+  lpTitle1El.textContent = topMusicEls[nextIndex].textContent;
+  lpTitle1El.dataset.lpIndex = nextIndex;
+});
+
+
+rightEl.addEventListener("click", function () {
+  this.classList.add('rotate');
+  setTimeout(() => {
+    this.classList.remove('rotate');
+  }, 1000);
+  const nextIndex = Number(lpTitle1El.dataset.lpIndex) + 1;
+  lpTitle1El.textContent = topMusicEls[nextIndex].textContent;
+  lpTitle1El.dataset.lpIndex = nextIndex;
+});
