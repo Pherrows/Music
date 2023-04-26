@@ -512,6 +512,8 @@ header .inner .menu-2.active {
   width: 900px;
   height: 506px;
   margin-top: 20px;
+  border: 3px solid rgb(200, 170, 230);
+  border-radius: 20px;
   
 }
 
