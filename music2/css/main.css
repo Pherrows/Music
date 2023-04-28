@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
-
+  max-height: 100vh;
+  /* overflow: hidden; */
 }
 
 
@@ -17,18 +18,19 @@ body {
   position: relative;
   max-width: 100%;
   flex-wrap: wrap;
-  height: 100%;
+  height: 2000px;
+  /* overflow: hidden; */
 }
 
-.inner {
+/* .inner {
   max-width: 100%;
   margin: 0 auto;
   position: relative;
   box-sizing: border-box;  
   background-color: #fff;
-  /* display: flex; */
-  /* border-bottom: 1px solid rgb(145, 70, 255); */
-}
+  display: flex;
+  border-bottom: 1px solid rgb(145, 70, 255);
+} */
 
 a {
   text-decoration: none;
@@ -37,13 +39,15 @@ a {
 /* header */
 
 header {
-  width: 300px;
+  width: 200px;
+  display: block;
 }
 
 header .nav {
-  height: 1400px;
+  height: 100%;
   width: 250px;
   border-right: 3px solid rgb(200, 170, 230);
+  position: fixed;
 }
 
 header .menu ul li a:hover {
@@ -64,7 +68,8 @@ header .sub-menu ul {
   width: 200px;
   margin-left: 20px;
   /* border-radius: 10px; */
-  margin-top: 30px;
+  margin-top: 10px;
+  height: 100%;
 }
 
 header .sub-menu li {
@@ -72,7 +77,7 @@ header .sub-menu li {
 }
 
 header .sub-menu ul li a {
-  font-size: 30px;
+  font-size: 20px;
   margin-left: 5px;
   margin-top: 20px;
   color: #fff;
@@ -102,7 +107,7 @@ header .search input {
   border-left: none;
   border-right: none;
   box-sizing: border-box;
-  font-size: 30px;
+  font-size: 20px;
   background-color: #000;
   color: #fff;
 }
@@ -120,12 +125,12 @@ header .menu {
   width: 200px;
   margin-left: 20px;
   border-radius: 10px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 header .menu ul li {
   font-size: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   border-bottom: 3px solid rgb(200, 170, 230);
 
 }
@@ -153,14 +158,15 @@ header .menu ul li a {
 }
 
 .main {
-  width: 2500px;
+  width: 100%;
   flex-wrap: wrap;
   position: absolute;
   top: 300px;
-  left: 450px;
-  height: 1410px;
-  /* border-bottom: 3px solid rgb(200, 170, 230); */
-
+  left: 300px;
+  min-height: 1400px;
+  /* overflow: hidden; */
+  margin: 0 auto;
+  display: flex;
 }
 
 .list {
@@ -168,9 +174,11 @@ header .menu ul li a {
   position: absolute;
   /* top: 300px;
   left: 450px; */
-  max-width: 70%;
+  max-width: 100%;
   flex-wrap: wrap;
-  height: 1410px;
+  /* height: 100%;   */
+  margin: 0 auto;
+
 }
 
 .list_item {
@@ -206,6 +214,7 @@ header .menu ul li a {
   white-space: nowrap;
   overflow: hidden;
   word-break: break-all;
+  margin-bottom: 10px;
 }
 
 .list_item img {
@@ -245,6 +254,7 @@ header .menu ul li a {
   transition: 1s;
 }
 
+/* more */
 .more_list {
   display: flex;
   justify-content: center;
@@ -254,7 +264,8 @@ header .menu ul li a {
   width: 100%;
   margin-top: 10px;
   position: absolute;
-  bottom: -200px;
+  bottom: 0px;
+  margin-top: 10px;
 }
 
 .more_list a {
@@ -263,44 +274,50 @@ header .menu ul li a {
   margin-top: 15px;
 }
 
+.hidden {
+  display: none;
+}
 
 
 /* footer */
+footer{
+  display: block;
+}
 
-.inner .footer-1 {
+
+.footer-1 {
   border-top: 3px solid rgb(200, 170, 230);
-  height: 240px;
-  bottom: -500px;
+  height: 200px;
+  bottom: -100px;
   position: absolute;
   /* background-color: rgb(145, 70, 255); */
-  left: 0;
+  left: 250px;
   right: 0;
   margin: auto;
   width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.inner .footer-1 p {
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
+.footer-1 p {
+  margin-top: 30px;
   font-size: 14px;
   color: #fff;
-  margin-bottom: 5px;
-  
+  margin: 0 20px 0;
+  bottom: 0;
 }
 
-.inner .footer-2 {
+.footer-2 {
   display: flex;
   position: absolute;
-  right: 600px;
-  bottom: -300px;
+  right: 100px;
+  bottom: 0px;
   justify-content: center;
   align-items: center;
 }
 
-.inner .footer-2 ul {
+.footer-2 ul {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -348,9 +365,9 @@ header .menu ul li a {
 
 .play_btn {
   flex: 1;
-  width: 200px;
+  /* width: 200px; */
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   position: relative;
   border-left: 3px solid rgb(200, 170, 230);
@@ -360,7 +377,10 @@ header .menu ul li a {
 
 .play_btn a {
   display: flex;
-  padding: 50px;
+  padding: 40px;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
 }
 
 .play_btn a:nth-child(1) span {
@@ -368,8 +388,11 @@ header .menu ul li a {
   margin-left: 20px;
   margin-right: 20px;
   position: absolute;
-  left: 200px;
+  left: 0;
   text-align: center;
+  flex: 1;
+  line-height: 40px;
+
 }
 
 .play_btn a:nth-child(2) span {
@@ -377,10 +400,13 @@ header .menu ul li a {
   margin-left: 20px;
   margin-right: 20px;
   position: absolute;
-  left: 300px;
+  left: 0;
   color: rgb(200, 170, 230);
   text-align: center;
   top: 17px;
+  flex: 1;
+  line-height: 40px;
+
 }
 
 .play_btn a:nth-child(3) span {
@@ -388,9 +414,10 @@ header .menu ul li a {
   margin-left: 20px;
   margin-right: 20px;
   position: absolute;
-  left: 400px;
+  left: 0px;
   text-align: center;
-
+  flex: 1;
+  line-height: 40px;
 }
 
 .play_list {
@@ -405,12 +432,12 @@ header .menu ul li a {
 .play_list a:nth-child(1) span {
   font-size: 50px;
   position: absolute;
-  left: 600px;
+  left: 400px;
 }
 
 
 .play_list a:nth-child(2) span {
   font-size: 50px;
   position: absolute;
-  left: 700px;
+  left: 500px;
 }
