@@ -16,7 +16,7 @@ body {
   background-color: #000;
   box-sizing: border-box;
   position: relative;
-  max-width: 100%;
+  width: 100%;
   flex-wrap: wrap;
   height: 2000px;
   /* overflow: hidden; */
@@ -55,8 +55,8 @@ header .menu ul li a:hover {
 }
 
 header .logo img {
-  height: 200px;
-  width: 200px;
+  height: 180px;
+  width: 180px;
   margin-top: 30px;
   margin-left: 30px;
 
@@ -149,7 +149,7 @@ header .menu ul li a {
   display: flex;
   position: absolute;
   top: 100px;
-  left: 450px;
+  left: 350px;
 }
 
 .new h1 {
@@ -158,7 +158,7 @@ header .menu ul li a {
 }
 
 .main {
-  width: 100%;
+  width: 1800px;
   flex-wrap: wrap;
   position: absolute;
   top: 300px;
@@ -169,6 +169,7 @@ header .menu ul li a {
   display: flex;
 }
 
+
 .list {
   display: flex;
   position: absolute;
@@ -178,7 +179,6 @@ header .menu ul li a {
   flex-wrap: wrap;
   /* height: 100%;   */
   margin: 0 auto;
-
 }
 
 .list_item {
