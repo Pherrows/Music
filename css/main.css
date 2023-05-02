@@ -594,7 +594,7 @@ header .inner .menu-2.active {
 .commend-2 ul li:hover img {
   /* display: block; */
   opacity: 1;
-  transition: 0.8;
+  transition: 0.8s;
 }
 
 .commend-2 ul li:hover a {
@@ -653,7 +653,7 @@ header .inner .menu-2.active {
   width: 42px;
   height: 42px;
   background-color: rgb(200, 170, 230);
-  border: 2px solid rgb(200, 170, 230);
+  /* border: 2px solid rgb(200, 170, 230); */
   border-radius: 10px;
   cursor: pointer;
   display: flex;
