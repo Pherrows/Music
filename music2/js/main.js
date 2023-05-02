@@ -26,7 +26,7 @@
 const container = document.querySelector('.list');
 const btnMore = document.querySelector('.more_list a');
 const items = document.querySelectorAll('.list_item');
-const itemsPerPage = 3;
+const itemsPerPage = 4;
 let currentPage = 1;
 
 btnMore.addEventListener('click', () => {
