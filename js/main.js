@@ -58,6 +58,7 @@ btn1El.addEventListener('click', function () {
 
 // 모달 열기
 const topMusicEls = document.querySelectorAll(".number ul li a");
+const topMusicEls2 = document.querySelectorAll(".number-2 ul li a");
 const modal1El = document.querySelector(".modal");
 
 topMusicEls.forEach(function (topMusic, index) {
@@ -84,6 +85,8 @@ const lpImg1 = document.querySelector(".modal .top-click img");
 
 const leftEl = document.querySelector(".modal .top-click .left");
 const rightEl = document.querySelector(".modal .top-click .right");
+
+
 
 
 lpImg1.addEventListener("click", function () {
@@ -117,4 +120,11 @@ rightEl.addEventListener("click", function () {
   const nextIndex = Number(lpTitle1El.dataset.lpIndex) + 1;
   lpTitle1El.textContent = topMusicEls[nextIndex].textContent;
   lpTitle1El.dataset.lpIndex = nextIndex;
+  
+
+    const nextIndex2 = Number(lpTitle1El.dataset.lpIndex) - 0;
+    lpTitle1El.textContent = topMusicEls2[nextIndex2].textContent;
+    lpTitle1El.dataset.lpIndex = nextIndex2;
+
+  
 });
