@@ -122,9 +122,9 @@ rightEl.addEventListener("click", function () {
   lpTitle1El.dataset.lpIndex = nextIndex;
   
 
-    const nextIndex2 = Number(lpTitle1El.dataset.lpIndex) - 0;
-    lpTitle1El.textContent = topMusicEls2[nextIndex2].textContent;
-    lpTitle1El.dataset.lpIndex = nextIndex2;
+    // const nextIndex2 = Number(lpTitle1El.dataset.lpIndex) - 0;
+    // lpTitle1El.textContent = topMusicEls2[nextIndex2].textContent;
+    // lpTitle1El.dataset.lpIndex = nextIndex2;
 
   
 });
