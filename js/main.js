@@ -57,8 +57,8 @@ btn1El.addEventListener('click', function () {
 
 
 // 모달 열기
-const topMusicEls = document.querySelectorAll(".number ul li a,.number-2 ul li a");
-const topMusicEls2 = document.querySelectorAll(".number-2 ul li a");
+const topMusicEls = document.querySelectorAll(".number ul li a,.number-2 ul li a,.number-3 ul li a");
+// const topMusicEls2 = document.querySelectorAll(".number-2 ul li a");
 const modal1El = document.querySelector(".modal");
 
 topMusicEls.forEach(function (topMusic, index) {
