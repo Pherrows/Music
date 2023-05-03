@@ -630,7 +630,7 @@ header .inner .menu-2.active {
 .inner .footer-2 {
   display: flex;
   position: absolute;
-  right: 390px;
+  right: 400px;
   bottom: -420px;
   justify-content: center;
   align-items: center;
